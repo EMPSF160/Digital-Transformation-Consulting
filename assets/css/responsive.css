@@ -1,0 +1,277 @@
+/* ==========================================================================
+   NEXUS CONSULTING - Responsive Light Mode Styles
+   Mandatory Screen Rule: 320px to 1024px ALL CONTENT CENTER ALIGNED
+   ========================================================================== */
+
+/* Fullscreen Off-Canvas Mobile Menu Styles */
+.mobile-offcanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #FFFFFF;
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: var(--transition-normal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.mobile-offcanvas.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mobile-offcanvas-close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(108, 43, 255, 0.08);
+    border: 1px solid var(--card-border);
+    color: var(--text-primary);
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--transition-bounce);
+}
+
+.mobile-offcanvas-close:hover {
+    background: var(--primary);
+    color: #FFFFFF;
+    transform: rotate(90deg);
+}
+
+.mobile-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.mobile-nav-link {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    transition: var(--transition-fast);
+    display: inline-block;
+    padding: 8px 24px;
+    border-radius: var(--radius-md);
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
+    color: var(--primary);
+    background: rgba(108, 43, 255, 0.08);
+}
+
+.mobile-menu-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 320px;
+}
+
+/* ==========================================================================
+   TABLET & MOBILE BREAKPOINTS (Max-Width: 1024px)
+   STRICT MANDATORY CENTER ALIGNMENT & NAVBAR BEHAVIOR
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    /* Mobile & Tablet Navbar Bar Styling - Light Theme & Corner Alignment */
+    .nexus-navbar {
+        background: #FFFFFF !important;
+        border-bottom: 1px solid rgba(108, 43, 255, 0.12) !important;
+        box-shadow: 0 4px 20px rgba(108, 43, 255, 0.06) !important;
+        padding: 14px 0 !important;
+    }
+
+    .nexus-navbar .container,
+    .nexus-navbar .container-fluid {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        width: 100% !important;
+    }
+
+    .nexus-navbar .navbar-brand-nexus {
+        color: #0F172A !important;
+        margin-left: 0 !important;
+        margin-right: auto !important;
+    }
+
+    .nexus-navbar .navbar-brand-nexus .gradient-text {
+        background: linear-gradient(135deg, #6C2BFF 0%, #8B3DFF 50%, #0088A8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .nexus-navbar .desktop-nav-links,
+    .nexus-navbar .desktop-cta {
+        display: none !important;
+    }
+
+    .nexus-navbar .mobile-hamburger-btn {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 12px;
+        background: rgba(108, 43, 255, 0.08) !important;
+        border: 1px solid rgba(108, 43, 255, 0.2) !important;
+        color: #6C2BFF !important;
+        font-size: 1.3rem;
+        cursor: pointer;
+        transition: var(--transition-fast);
+        margin-right: 0 !important;
+        margin-left: auto !important;
+    }
+
+    .nexus-navbar .mobile-hamburger-btn:hover {
+        background: #6C2BFF !important;
+        color: #FFFFFF !important;
+    }
+
+    /* MANDATORY: All Content Center Aligned across Mobile & Tablet */
+    body,
+    .section-title,
+    .section-desc,
+    .hero-content,
+    .stat-card,
+    .glass-card,
+    .card-body,
+    .footer-column,
+    .nexus-footer,
+    .cta-content,
+    .contact-info,
+    .service-card,
+    .case-study-card,
+    .insight-card,
+    .timeline-content,
+    .leader-card,
+    .faq-accordion,
+    form,
+    .form-group,
+    .pricing-card {
+        text-align: center !important;
+    }
+
+    /* Center Align flex containers except Navbar header container */
+    .hero-content,
+    .hero-btns,
+    .section-header,
+    .badge-luxury,
+    .mega-menu-card,
+    .footer-links,
+    .footer-socials,
+    .card-footer,
+    .meta-tags,
+    .icon-box,
+    .d-flex:not(.navbar-brand-nexus):not(.nexus-navbar .container):not(.nexus-navbar .container-fluid) {
+        justify-content: center !important;
+        align-items: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* Center align buttons and give minimum touch height (48px) */
+    .btn-nexus,
+    .btn-primary-nexus,
+    .btn-outline-nexus {
+        min-height: 48px;
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    /* Center align images and icons */
+    img,
+    svg,
+    .brand-icon,
+    .mega-menu-icon,
+    .timeline-dot {
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .section-title {
+        font-size: 2.2rem !important;
+    }
+
+    .section-padding {
+        padding: 70px 0 !important;
+    }
+}
+
+/* ==========================================================================
+   MOBILE SPECIFIC BREAKPOINTS (320px - 767px)
+   ========================================================================== */
+
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 1.85rem !important;
+    }
+
+    .stat-number {
+        font-size: 2.25rem !important;
+    }
+
+    .hero-title {
+        font-size: 2.2rem !important;
+    }
+
+    /* Single column enforcement */
+    .col-lg-3, .col-lg-4, .col-lg-6, .col-md-6, .col-md-4 {
+        width: 100% !important;
+        margin-bottom: 24px;
+    }
+
+    /* Touch optimization */
+    input, select, textarea, button {
+        font-size: 16px !important;
+    }
+
+    .floating-contact-btn {
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 320px;
+        justify-content: center;
+    }
+
+    .back-to-top-btn {
+        bottom: 80px;
+        right: 20px;
+    }
+
+    /* Custom Cursor Disabled on Mobile Touch Devices */
+    .custom-cursor,
+    .custom-cursor-follower {
+        display: none !important;
+    }
+}

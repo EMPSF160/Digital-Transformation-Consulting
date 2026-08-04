@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Client Portal Dashboard | NEXUS CONSULTING</title>
+    <meta name="description" content="NEXUS CONSULTING executive portal for real-time digital transformation tracking, AI ROI metrics, project management, and team collaboration.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body class="dark-theme">
+
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <div class="d-flex min-vh-100">
+        <!-- Sidebar Navigation -->
+        <aside class="glass-card rounded-0 border-top-0 border-bottom-0 border-start-0 p-4 d-none d-lg-flex flex-column justify-content-between" style="width: 280px; z-index: 100;">
+            <div>
+                <a href="index.html" class="navbar-brand-nexus mb-5 d-flex">
+                    <div class="brand-icon"><i class="fas fa-cube"></i></div>
+                    <span class="ms-2 fw-bold gradient-text">NEXUS</span>
+                </a>
+
+                <ul class="nav flex-column gap-2">
+                    <li class="nav-item">
+                        <a href="#overview" class="nav-link-nexus active py-3 px-3"><i class="fas fa-chart-line me-3 text-accent"></i> Analytics Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link-nexus py-3 px-3"><i class="fas fa-project-diagram me-3 text-accent"></i> Active Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#documents" class="nav-link-nexus py-3 px-3"><i class="fas fa-file-alt me-3 text-accent"></i> Documents Repository</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#team" class="nav-link-nexus py-3 px-3"><i class="fas fa-users me-3 text-accent"></i> Team Advisory</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#settings" class="nav-link-nexus py-3 px-3"><i class="fas fa-cog me-3 text-accent"></i> Portal Settings</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="glass-card p-3 d-flex align-items-center gap-3">
+                    <div class="brand-icon flex-shrink-0"><i class="fas fa-user-tie"></i></div>
+                    <div class="text-truncate">
+                        <h6 class="mb-0 fw-bold text-truncate">Marcus Vance</h6>
+                        <small class="text-muted text-truncate d-block">Apex Global Bank CTO</small>
+                    </div>
+                </div>
+                <a href="login.html" class="btn-nexus btn-outline-nexus w-100 mt-3 py-2 fs-6"><i class="fas fa-sign-out-alt me-2"></i> Log Out</a>
+            </div>
+        </aside>
+
+        <!-- Main Portal Dashboard Content Area -->
+        <main class="flex-grow-1 p-4 p-lg-5 overflow-x-hidden">
+            <!-- Topbar Header -->
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-5 gap-3">
+                <div>
+                    <h2 class="fw-extrabold mb-1">Executive Transformation Dashboard</h2>
+                    <p class="text-secondary small mb-0">Real-time status feed for Apex Global Bank Enterprise Modernization Program</p>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="index.html" class="btn-nexus btn-outline-nexus py-2 px-3 fs-6"><i class="fas fa-home me-2"></i> Public Site</a>
+                </div>
+            </div>
+
+            <!-- Top Metric Cards Grid -->
+            <div class="row g-4 mb-5">
+                <div class="col-xl-3 col-md-6">
+                    <div class="glass-card p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="small text-muted fw-semibold">ACTIVE INITIATIVES</span>
+                            <div class="brand-icon" style="width:36px; height:36px; font-size:1rem;"><i class="fas fa-tasks"></i></div>
+                        </div>
+                        <h3 class="stat-number mb-1 fs-2">4 Programs</h3>
+                        <small class="text-accent fw-bold"><i class="fas fa-check-circle me-1"></i> On Schedule (100%)</small>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="glass-card p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="small text-muted fw-semibold">CLOUD EFFICIENCY ROI</span>
+                            <div class="brand-icon" style="width:36px; height:36px; font-size:1rem;"><i class="fas fa-chart-line"></i></div>
+                        </div>
+                        <h3 class="stat-number mb-1 fs-2">+420%</h3>
+                        <small class="text-accent fw-bold"><i class="fas fa-arrow-up me-1"></i> +15% Q/Q Surge</small>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="glass-card p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="small text-muted fw-semibold">AI AGENTS DEPLOYED</span>
+                            <div class="brand-icon" style="width:36px; height:36px; font-size:1rem;"><i class="fas fa-robot"></i></div>
+                        </div>
+                        <h3 class="stat-number mb-1 fs-2">18 Swarms</h3>
+                        <small class="text-accent fw-bold"><i class="fas fa-bolt me-1"></i> 2.4M Ops / Day</small>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-md-6">
+                    <div class="glass-card p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span class="small text-muted fw-semibold">COST REDUCTION REALIZED</span>
+                            <div class="brand-icon" style="width:36px; height:36px; font-size:1rem;"><i class="fas fa-dollar-sign"></i></div>
+                        </div>
+                        <h3 class="stat-number mb-1 fs-2">$68.4M</h3>
+                        <small class="text-accent fw-bold"><i class="fas fa-shield-alt me-1"></i> Audited by Deloitte</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Chart.js Widgets Row -->
+            <div class="row g-4 mb-5">
+                <div class="col-lg-8">
+                    <div class="glass-card p-4 h-100">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h5 class="fw-bold mb-0">Transformation ROI & AI Impact Velocity</h5>
+                            <span class="badge bg-primary bg-opacity-20 text-accent">Real-Time Data Sync</span>
+                        </div>
+                        <div style="height: 320px;">
+                            <canvas id="dashboardRoiChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="glass-card p-4 h-100">
+                        <h5 class="fw-bold mb-4">Budget & Tech Spend Allocation</h5>
+                        <div style="height: 280px;">
+                            <canvas id="dashboardBudgetChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Transformation Projects Status Table -->
+            <div class="glass-card p-4 mb-5" id="projects">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4 gap-3">
+                    <h5 class="fw-bold mb-0">Active Enterprise Transformation Initiatives</h5>
+                    <div class="d-flex gap-2">
+                        <button class="btn-nexus btn-primary-nexus py-1 px-3 fs-6 project-tab-btn active" data-category="all">All</button>
+                        <button class="btn-nexus btn-outline-nexus py-1 px-3 fs-6 project-tab-btn" data-category="in-progress">In Progress</button>
+                        <button class="btn-nexus btn-outline-nexus py-1 px-3 fs-6 project-tab-btn" data-category="completed">Completed</button>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-borderless text-primary align-middle">
+                        <thead>
+                            <tr class="border-bottom border-secondary border-opacity-25 small text-muted text-uppercase">
+                                <th>Project Name</th>
+                                <th>Lead Partner</th>
+                                <th>Completion</th>
+                                <th>Target Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="project-table-row border-bottom border-secondary border-opacity-10" data-status="in-progress">
+                                <td>
+                                    <h6 class="mb-0 fw-bold">Multi-Cloud Core Mainframe Refactoring</h6>
+                                    <small class="text-muted">AWS & Azure Migration</small>
+                                </td>
+                                <td>Sophia Sterling (CTO)</td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="progress flex-grow-1" style="height: 6px;">
+                                            <div class="progress-bar bg-accent" style="width: 82%;"></div>
+                                        </div>
+                                        <span class="small fw-bold">82%</span>
+                                    </div>
+                                </td>
+                                <td>Q4 2026</td>
+                                <td><span class="badge bg-success bg-opacity-20 text-success">In Progress</span></td>
+                            </tr>
+
+                            <tr class="project-table-row border-bottom border-secondary border-opacity-10" data-status="in-progress">
+                                <td>
+                                    <h6 class="mb-0 fw-bold">Agentic AI Real-Time Fraud Engine</h6>
+                                    <small class="text-muted">Domain LLM Integration</small>
+                                </td>
+                                <td>Elena Vasquez (Chief AI)</td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="progress flex-grow-1" style="height: 6px;">
+                                            <div class="progress-bar bg-accent" style="width: 65%;"></div>
+                                        </div>
+                                        <span class="small fw-bold">65%</span>
+                                    </div>
+                                </td>
+                                <td>Q1 2027</td>
+                                <td><span class="badge bg-success bg-opacity-20 text-success">In Progress</span></td>
+                            </tr>
+
+                            <tr class="project-table-row" data-status="completed">
+                                <td>
+                                    <h6 class="mb-0 fw-bold">Zero-Trust Security Mesh Rollout</h6>
+                                    <small class="text-muted">Quantum Encryption</small>
+                                </td>
+                                <td>David Chen (Head Cyber)</td>
+                                <td>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <div class="progress flex-grow-1" style="height: 6px;">
+                                            <div class="progress-bar bg-accent" style="width: 100%;"></div>
+                                        </div>
+                                        <span class="small fw-bold">100%</span>
+                                    </div>
+                                </td>
+                                <td>Q2 2026</td>
+                                <td><span class="badge bg-primary bg-opacity-20 text-accent">Completed</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

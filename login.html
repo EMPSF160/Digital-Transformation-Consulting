@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | NEXUS Enterprise Portal</title>
+    <meta name="description" content="Executive portal login for NEXUS CONSULTING clients and advisory team.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body class="light-theme">
+
+    <!-- Auth Page Main Wrapper -->
+    <div class="auth-page-wrapper">
+        <div class="auth-ambient-glow"></div>
+
+        <!-- Floating Login Card -->
+        <div class="auth-card" data-aos="fade-up">
+            
+            <!-- Brand Header (Clickable to Home) -->
+            <a href="index.html" class="auth-brand-logo text-decoration-none" title="Back to Home">
+                <div class="auth-brand-box">
+                    <i class="fas fa-cube"></i>
+                </div>
+                <span class="auth-brand-name">NEXUS</span>
+            </a>
+
+            <!-- Card Headings -->
+            <h2 class="auth-title">Welcome Back</h2>
+            <p class="auth-subtitle">Login to your executive portal</p>
+
+            <!-- Login Form -->
+            <form onsubmit="event.preventDefault(); window.location.href='dashboard.html';">
+                <!-- Email Field -->
+                <div class="mb-3 text-start">
+                    <label class="auth-form-label">Email Address</label>
+                    <input type="email" class="auth-input-field" placeholder="Enter your email" required>
+                </div>
+
+                <!-- Password Field -->
+                <div class="mb-3 text-start">
+                    <label class="auth-form-label">Password</label>
+                    <div class="password-input-wrapper">
+                        <input type="password" id="loginPassword" class="auth-input-field" placeholder="••••••••" required>
+                        <button type="button" class="password-toggle-btn" onclick="togglePasswordVisibility('loginPassword', this)">
+                            <i class="far fa-eye"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Checkbox & Forgot Password Row -->
+                <div class="d-flex align-items-center justify-content-between mb-4">
+                    <label class="d-flex align-items-center gap-2 small text-secondary cursor-pointer">
+                        <input type="checkbox" class="auth-checkbox" checked>
+                        <span class="fw-semibold text-dark">Remember me</span>
+                    </label>
+                    <a href="#" onclick="alert('Password reset link has been sent to your registered email.'); return false;" class="small auth-footer-link">Forgot password?</a>
+                </div>
+
+                <!-- Sign In Button -->
+                <button type="submit" class="auth-btn-submit">Sign In</button>
+            </form>
+
+            <!-- Divider -->
+            <div class="auth-divider">
+                <span>Or continue with</span>
+            </div>
+
+            <!-- Social Sign-in Buttons -->
+            <div class="social-auth-grid">
+                <a href="#" onclick="window.location.href='dashboard.html'; return false;" class="social-auth-btn google" title="Sign in with Google">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="#" onclick="window.location.href='dashboard.html'; return false;" class="social-auth-btn apple" title="Sign in with Apple">
+                    <i class="fab fa-apple"></i>
+                </a>
+                <a href="#" onclick="window.location.href='dashboard.html'; return false;" class="social-auth-btn facebook" title="Sign in with Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </div>
+
+            <!-- Footer Links -->
+            <div class="auth-footer-text mb-2">
+                <span>New to NEXUS? </span>
+                <a href="signup.html" class="auth-footer-link">Sign Up</a>
+            </div>
+            <div class="auth-footer-text small">
+                <span>Facing issues? </span>
+                <a href="contact.html" class="auth-footer-link">Contact Support</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function togglePasswordVisibility(inputId, btn) {
+            const input = document.getElementById(inputId);
+            const icon = btn.querySelector('i');
+            if (input.type === 'password') {
+                input.type = 'text';
+                icon.className = 'far fa-eye-slash';
+            } else {
+                input.type = 'password';
+                icon.className = 'far fa-eye';
+            }
+        }
+    </script>
+</body>
+</html>

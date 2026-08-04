@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXUS CONSULTING | World-Class Digital Transformation & AI Enterprise Solutions</title>
+    <meta name="description"
+        content="NEXUS CONSULTING architects next-generation digital transformation, AI innovation, cloud modernization, and enterprise strategy for Fortune 500 companies worldwide.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+
+<body class="light-theme">
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-follower"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-bar"></div>
+
+    <!-- Floating Contact Button -->
+    <a href="contact.html" class="floating-contact-btn">
+        <span class="floating-pulse"></span>
+        <span class="fw-semibold">Ask an Advisor</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top-btn" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Mobile Off-canvas Navigation -->
+    <div class="mobile-offcanvas">
+        <button class="mobile-offcanvas-close" aria-label="Close Menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+            <li><a href="about.html" class="mobile-nav-link">About</a></li>
+            <li><a href="services.html" class="mobile-nav-link">Services</a></li>
+            <li><a href="industries.html" class="mobile-nav-link">Industries</a></li>
+            <li><a href="case-studies.html" class="mobile-nav-link">Case Studies</a></li>
+            <li><a href="insights.html" class="mobile-nav-link">Insights</a></li>
+            <li><a href="careers.html" class="mobile-nav-link">Careers</a></li>
+            <li><a href="contact.html" class="mobile-nav-link">Contact</a></li>
+        </ul>
+        <div class="mobile-menu-actions">
+            <a href="login.html" class="btn-nexus btn-outline-nexus w-100"><i class="fas fa-user-circle me-2"></i>
+                Client Login</a>
+        </div>
+    </div>
+
+    <!-- Sticky Header & Desktop Navbar -->
+    <header class="nexus-navbar">
+        <div class="container d-flex align-items-center justify-content-between">
+            <!-- Brand Logo -->
+            <a href="index.html" class="navbar-brand-nexus">
+                <div class="brand-icon">
+                    <i class="fas fa-cube"></i>
+                </div>
+                <span class="fw-bold gradient-text">NEXUS</span>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <ul class="nav desktop-nav-links d-none d-lg-flex align-items-center gap-1">
+                <li class="nav-item"><a href="index.html" class="nav-link-nexus active">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link-nexus">About</a></li>
+                <li class="nav-item"><a href="services.html" class="nav-link-nexus">Services</a></li>
+                <li class="nav-item"><a href="industries.html" class="nav-link-nexus">Industries</a></li>
+                <li class="nav-item"><a href="case-studies.html" class="nav-link-nexus">Case Studies</a></li>
+                <li class="nav-item"><a href="insights.html" class="nav-link-nexus">Insights</a></li>
+                <li class="nav-item"><a href="careers.html" class="nav-link-nexus">Careers</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link-nexus">Contact</a></li>
+            </ul>
+
+            <!-- Desktop CTA (Login Icon) -->
+            <div class="desktop-cta d-none d-lg-flex align-items-center gap-3">
+                <a href="login.html" class="nav-link-nexus fs-5 d-flex align-items-center gap-2" title="Client Login">
+                    <i class="fas fa-user-circle fs-4 text-primary"></i> <span class="fs-6 fw-semibold">Login</span>
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <button class="mobile-hamburger-btn d-lg-none" aria-label="Open Mobile Navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- SECTION 1: Fullscreen Hero Slider / Video Background -->
+    <section class="hero-section position-relative min-vh-100 d-flex align-items-center overflow-hidden pt-5">
+        <!-- Background Video with Glass Gradient Overlay -->
+        <video autoplay muted loop playsinline class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover"
+            style="opacity: 0.82; filter: contrast(1.05) brightness(0.95);">
+            <source src="video/108640-681143995_medium.mp4" type="video/mp4">
+        </video>
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: linear-gradient(180deg, rgba(248,250,252,0.45) 0%, rgba(248,250,252,0.75) 100%);"></div>
+        <div class="neon-glow" style="top: 10%; right: 10%;"></div>
+        <div class="neon-glow neon-glow-cyan" style="bottom: 15%; left: 5%;"></div>
+
+        <div class="container position-relative z-2 py-5 mt-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <div class="badge-luxury mb-4 hero-sub-gsap" data-aos="fade-down">
+                        <i class="fas fa-sparkles"></i> Enterprise Digital Transformation 2026
+                    </div>
+                    <h1 class="hero-title hero-title-gsap display-3 fw-extrabold mb-4">
+                        Architecting <span class="gradient-text">Autonomous Enterprise</span> Futures.
+                    </h1>
+                    <p class="hero-sub-gsap lead text-secondary mb-5 fs-5">
+                        We partner with global Fortune 500 leaders to engineer AI-native ecosystems, modernize cloud
+                        backbones, and orchestrate high-impact digital reinvention.
+                    </p>
+                    <div
+                        class="hero-btns d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                        <a href="services.html" class="btn-nexus btn-primary-nexus">
+                            Explore Capabilities <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                        <a href="case-studies.html" class="btn-nexus btn-outline-nexus">
+                            View Case Studies <i class="fas fa-play-circle ms-2"></i>
+                        </a>
+                    </div>
+
+                    <!-- Hero Quick Stats Row -->
+                    <div
+                        class="row mt-5 pt-3 border-top border-secondary border-opacity-25 g-4 text-center text-lg-start">
+                        <div class="col-4">
+                            <h3 class="stat-number mb-1" data-count="4.8" data-prefix="$" data-suffix="B+"
+                                data-decimals="1">$4.8B+</h3>
+                            <span class="small text-muted fw-semibold">Value Unlocked</span>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="stat-number mb-1" data-count="99.4" data-suffix="%" data-decimals="1">99.4%</h3>
+                            <span class="small text-muted fw-semibold">Cloud Migration Speed</span>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="stat-number mb-1" data-count="140" data-suffix="+" data-decimals="0">140+</h3>
+                            <span class="small text-muted fw-semibold">Global Enterprises</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 text-center" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="glass-card p-3 position-relative floating-element">
+                        <img src="image/business-collaboration-with-holographic-financial-data_747092-1970.jpg"
+                            alt="Digital Transformation Hologram" class="img-fluid rounded-4 shadow-lg w-100">
+                        <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 w-75">
+                            <div class="glass-card p-3 d-flex align-items-center gap-3">
+                                <div class="brand-icon flex-shrink-0">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div class="text-start">
+                                    <h6 class="mb-0 fw-bold">Neural Core AI v4.2</h6>
+                                    <small class="text-accent">+380% Operational Speed</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: Trusted by Global Enterprises Logo Ticker -->
+    <section
+        class="py-4 border-top border-bottom border-secondary border-opacity-10 bg-black bg-opacity-20 position-relative z-2">
+        <div class="container">
+            <p class="text-center small text-uppercase tracking-widest text-muted fw-bold mb-3">Trusted By Global
+                Fortune 500 Pioneers</p>
+            <div class="swiper partners-swiper">
+                <div class="swiper-wrapper align-items-center text-center">
+                    <div class="swiper-slide">
+                        <h5 class="fw-bold text-muted text-opacity-75 mb-0"><i
+                                class="fab fa-microsoft me-2"></i>MICROSOFT</h5>
+                    </div>
+                    <div class="swiper-slide">
+                        <h5 class="fw-bold text-muted text-opacity-75 mb-0"><i class="fab fa-aws me-2"></i>AWS CLOUD
+                        </h5>
+                    </div>
+                    <div class="swiper-slide">
+                        <h5 class="fw-bold text-muted text-opacity-75 mb-0"><i class="fab fa-google me-2"></i>GOOGLE
+                            CLOUD</h5>
+                    </div>
+                    <div class="swiper-slide">
+                        <h5 class="fw-bold text-muted text-opacity-75 mb-0"><i
+                                class="fab fa-salesforce me-2"></i>SALESFORCE</h5>
+                    </div>
+                    <div class="swiper-slide">
+                        <h5 class="fw-bold text-muted text-opacity-75 mb-0"><i class="fab fa-oracle me-2"></i>ORACLE
+                        </h5>
+                    </div>
+                    <div class="swiper-slide">
+                        <h5 class="fw-bold text-muted text-opacity-75 mb-0"><i
+                                class="fas fa-network-wire me-2"></i>NVIDIA AI</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: Digital Transformation Core Services -->
+    <section class="section-padding position-relative">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge-luxury mb-3"><i class="fas fa-cogs"></i> Enterprise Portfolio</span>
+                <h2 class="section-title">End-to-End <span class="gradient-text">Transformation Capabilities</span></h2>
+                <p class="section-desc mx-auto">We orchestrate holistically integrated solutions engineered to scale
+                    agility, security, and enterprise growth.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <img src="image/futuristic-technology-concept_23-2151908079.jpg" alt="AI & Automation"
+                                class="img-fluid rounded-3 mb-3 w-100 object-fit-cover" style="height: 180px;">
+                            <div class="brand-icon mb-3">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h4 class="mb-3">Enterprise AI & Automation</h4>
+                            <p class="text-secondary fs-6">Deploying custom Large Language Models, agentic workflows,
+                                and predictive analytics to automate core business operations.</p>
+                        </div>
+                        <a href="services.html"
+                            class="text-accent fw-bold small text-uppercase tracking-wider mt-3 d-inline-flex align-items-center gap-2">
+                            Discover Capability <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <img src="image/coworkers-data-center-replacing-storage-rigs-parts-improve-performance_482257-89835.jpg"
+                                alt="Multi-Cloud Migration" class="img-fluid rounded-3 mb-3 w-100 object-fit-cover"
+                                style="height: 180px;">
+                            <div class="brand-icon mb-3">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                            </div>
+                            <h4 class="mb-3">Multi-Cloud Migration</h4>
+                            <p class="text-secondary fs-6">Zero-downtime cloud architecture, legacy system
+                                modernization, and cloud-native serverless refactoring.</p>
+                        </div>
+                        <a href="services.html"
+                            class="text-accent fw-bold small text-uppercase tracking-wider mt-3 d-inline-flex align-items-center gap-2">
+                            Discover Capability <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <img src="image/online-transactions-businessman-touching-fingerprint-scan-provides-security-interface-payment-shopping-banking-cloud-co.jpg"
+                                alt="Cybersecurity" class="img-fluid rounded-3 mb-3 w-100 object-fit-cover"
+                                style="height: 180px;">
+                            <div class="brand-icon mb-3">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h4 class="mb-3">Cybersecurity Resilience</h4>
+                            <p class="text-secondary fs-6">Zero-Trust architecture, quantum-safe encryption standards,
+                                continuous threat intelligence, and compliance automation.</p>
+                        </div>
+                        <a href="services.html"
+                            class="text-accent fw-bold small text-uppercase tracking-wider mt-3 d-inline-flex align-items-center gap-2">
+                            Discover Capability <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <img src="image/businesspeople-analyzing-data-touchscreen-table_285145-23361.jpg"
+                                alt="Data Engineering" class="img-fluid rounded-3 mb-3 w-100 object-fit-cover"
+                                style="height: 180px;">
+                            <div class="brand-icon mb-3">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h4 class="mb-3">Data Engineering & Mesh</h4>
+                            <p class="text-secondary fs-6">Unifying fragmented enterprise data silos into scalable
+                                real-time analytics platforms and governance frameworks.</p>
+                        </div>
+                        <a href="services.html"
+                            class="text-accent fw-bold small text-uppercase tracking-wider mt-3 d-inline-flex align-items-center gap-2">
+                            Discover Capability <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <img src="image/businessman-businesswoman-formal-wear-working-together-optimize-business-process-by-apply_926199-2685320.jpg"
+                                alt="Enterprise Apps" class="img-fluid rounded-3 mb-3 w-100 object-fit-cover"
+                                style="height: 180px;">
+                            <div class="brand-icon mb-3">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <h4 class="mb-3">Enterprise Applications</h4>
+                            <p class="text-secondary fs-6">Next-Gen SAP, Salesforce, and Microsoft Dynamics
+                                customization and integration for hyper-scaled workflow performance.</p>
+                        </div>
+                        <a href="services.html"
+                            class="text-accent fw-bold small text-uppercase tracking-wider mt-3 d-inline-flex align-items-center gap-2">
+                            Discover Capability <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+                    <div class="glass-card p-4 h-100 d-flex flex-column justify-content-between">
+                        <div>
+                            <img src="image/strategic-business-planning-modern-office_1089440-12849.jpg"
+                                alt="Strategy & CX" class="img-fluid rounded-3 mb-3 w-100 object-fit-cover"
+                                style="height: 180px;">
+                            <div class="brand-icon mb-3">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4 class="mb-3">Strategy & CX Innovation</h4>
+                            <p class="text-secondary fs-6">Human-centered digital experience design, omni-channel
+                                customer platforms, and C-Suite growth advisory.</p>
+                        </div>
+                        <a href="services.html"
+                            class="text-accent fw-bold small text-uppercase tracking-wider mt-3 d-inline-flex align-items-center gap-2">
+                            Discover Capability <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: AI & Innovation Solutions Interactive Showcase -->
+    <section
+        class="section-padding bg-black bg-opacity-30 border-top border-bottom border-secondary border-opacity-10 position-relative">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <span class="badge-luxury mb-3"><i class="fas fa-bolt"></i> AI Innovation Engine</span>
+                    <h2 class="section-title mb-4">From Legacy Operations to <span class="gradient-text">Autonomous
+                            Enterprise Intelligence</span></h2>
+                    <p class="text-secondary mb-4">Our proprietary NEXUS AI Accelerator suite equips global
+                        organizations to transition from manual, siloed operations into predictive, hyper-automated
+                        market leaders.</p>
+
+                    <div class="accordion accordion-flush" id="aiAccordion">
+                        <div class="glass-card mb-3 p-3">
+                            <h5 class="mb-2 fw-bold text-primary"><i class="fas fa-microchip text-accent me-2"></i>
+                                Agentic AI Workflow Automation</h5>
+                            <p class="small text-muted mb-0">Autonomous AI agents that execute complex multi-step
+                                financial, supply chain, and customer operations in real-time.</p>
+                        </div>
+                        <div class="glass-card mb-3 p-3">
+                            <h5 class="mb-2 fw-bold text-primary"><i class="fas fa-brain text-accent me-2"></i> Custom
+                                Domain LLM Training</h5>
+                            <p class="small text-muted mb-0">Fine-tuned models trained on proprietary enterprise
+                                knowledge with strict data governance and privacy guarantees.</p>
+                        </div>
+                        <div class="glass-card p-3">
+                            <h5 class="mb-2 fw-bold text-primary"><i class="fas fa-network-wired text-accent me-2"></i>
+                                Real-time Predictive Analytics</h5>
+                            <p class="small text-muted mb-0">Anticipate market fluctuations, operational bottlenecks,
+                                and demand spikes before they impact your P&L.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 text-center" data-aos="fade-left">
+                    <div class="glass-card p-3 position-relative">
+                        <video autoplay muted loop playsinline
+                            class="img-fluid rounded-4 shadow-lg w-100 object-fit-cover" style="height: 340px;">
+                            <source src="video/202987-919379330_medium.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: Industries We Serve -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge-luxury mb-3"><i class="fas fa-building"></i> Sector Leadership</span>
+                <h2 class="section-title">Tailored Solutions Across <span class="gradient-text">Global Industries</span>
+                </h2>
+                <p class="section-desc mx-auto">Deep domain specialization combined with cutting-edge technological
+                    mastery.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <a href="industries.html" class="glass-card p-4 text-center d-block">
+                        <div class="brand-icon mx-auto mb-3"><i class="fas fa-university"></i></div>
+                        <h5 class="mb-2">Banking & Finance</h5>
+                        <p class="small text-muted">Core banking modernization & fraud prevention AI.</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+                    <a href="industries.html" class="glass-card p-4 text-center d-block">
+                        <div class="brand-icon mx-auto mb-3"><i class="fas fa-user-md"></i></div>
+                        <h5 class="mb-2">Healthcare & Life Sciences</h5>
+                        <p class="small text-muted">HIPAA-compliant cloud & predictive care analytics.</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <a href="industries.html" class="glass-card p-4 text-center d-block">
+                        <div class="brand-icon mx-auto mb-3"><i class="fas fa-shopping-bag"></i></div>
+                        <h5 class="mb-2">Retail & E-Commerce</h5>
+                        <p class="small text-muted">Hyper-personalized AI shopping & omnichannel systems.</p>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                    <a href="industries.html" class="glass-card p-4 text-center d-block">
+                        <div class="brand-icon mx-auto mb-3"><i class="fas fa-industry"></i></div>
+                        <h5 class="mb-2">Manufacturing 4.0</h5>
+                        <p class="small text-muted">IoT digital twins & predictive plant maintenance.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: Featured Case Studies Swiper Carousel -->
+    <section class="section-padding bg-black bg-opacity-40 position-relative">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-5">
+                <div>
+                    <span class="badge-luxury mb-2"><i class="fas fa-trophy"></i> Proven Impact</span>
+                    <h2 class="section-title mb-0">Featured <span class="gradient-text">Transformation Stories</span>
+                    </h2>
+                </div>
+                <a href="case-studies.html" class="btn-nexus btn-outline-nexus mt-3 mt-md-0">View All Case Studies <i
+                        class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+
+            <div class="swiper case-studies-swiper">
+                <div class="swiper-wrapper">
+                    <!-- Case Study 1 -->
+                    <div class="swiper-slide">
+                        <div class="glass-card h-100 p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <span class="badge bg-primary bg-opacity-20 text-accent mb-3">Global Investment
+                                    Bank</span>
+                                <h4 class="mb-3">Cloud Migration & Autonomous Risk Engine</h4>
+                                <p class="text-secondary small">Migrated 4,000+ legacy workloads to , operational
+                                    latency by 74% while cutting infrastructure costs by $120M annually.</p>
+                            </div>
+                            <div
+                                class="pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h4 class="stat-number mb-0 fs-3" data-count="120" data-prefix="$" data-suffix="M">
+                                        $120M</h4>
+                                    <span class="small text-muted">Annual Savings</span>
+                                </div>
+                                <a href="case-studies.html" class="btn-nexus btn-outline-nexus py-2 px-3 fs-6">Read
+                                    Report</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 2 -->
+                    <div class="swiper-slide">
+                        <div class="glass-card h-100 p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <span class="badge bg-primary bg-opacity-20 text-accent mb-3">Fortune 100 Retail
+                                    Giant</span>
+                                <h4 class="mb-3">Omnichannel AI Supply Chain Optimization</h4>
+                                <p class="text-secondary small">Implemented real-time predictive demand modeling across
+                                    2,500 stores, boosting fulfillment speed by 3.5x.</p>
+                            </div>
+                            <div
+                                class="pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h4 class="stat-number mb-0 fs-3" data-count="3.5" data-suffix="x"
+                                        data-decimals="1">3.5x</h4>
+                                    <span class="small text-muted">Fulfillment Speed</span>
+                                </div>
+                                <a href="case-studies.html" class="btn-nexus btn-outline-nexus py-2 px-3 fs-6">Read
+                                    Report</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Case Study 3 -->
+                    <div class="swiper-slide">
+                        <div class="glass-card h-100 p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <span class="badge bg-primary bg-opacity-20 text-accent mb-3">Global Telecom
+                                    Provider</span>
+                                <h4 class="mb-3">Next-Gen 5G Core Network Modernization</h4>
+                                <p class="text-secondary small">Architected containerized microservices infrastructure
+                                    supporting 85M active subscribers with 99.999% uptime.</p>
+                            </div>
+                            <div
+                                class="pt-3 border-top border-secondary border-opacity-25 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h4 class="stat-number mb-0 fs-3" data-count="99.999" data-suffix="%"
+                                        data-decimals="3">99.999%</h4>
+                                    <span class="small text-muted">System Availability</span>
+                                </div>
+                                <a href="case-studies.html" class="btn-nexus btn-outline-nexus py-2 px-3 fs-6">Read
+                                    Report</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination swiper-pagination-case mt-4 text-center"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 7: Global Impact & Executive Testimonials -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge-luxury mb-3"><i class="fas fa-quote-left"></i> Client Voice</span>
+                <h2 class="section-title">Endorsed by <span class="gradient-text">C-Suite Leaders</span></h2>
+            </div>
+
+            <div class="swiper testimonials-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="glass-card p-4">
+                            <div class="d-flex align-items-center gap-2 mb-3 text-warning">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="fst-italic text-secondary mb-4 fs-6">"NEXUS CONSULTING did not just modernize our
+                                cloud stack — they redefined our entire corporate operating model. Their AI accelerators
+                                cut our multi-year roadmap down to 8 months."</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="brand-icon"><i class="fas fa-user-tie"></i></div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Marcus Vance</h6>
+                                    <small class="text-muted">Chief Technology Officer, Apex Global Bank</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="glass-card p-4">
+                            <div class="d-flex align-items-center gap-2 mb-3 text-warning">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="fst-italic text-secondary mb-4 fs-6">"The caliber of strategic rigor and technical
+                                execution NEXUS delivered is unprecedented. They are undeniably the global gold standard
+                                in digital transformation."</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="brand-icon"><i class="fas fa-user-check"></i></div>
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Elena Rostova</h6>
+                                    <small class="text-muted">Chief Information Officer, Horizon Health System</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: Call to Action (Futuristic Glow Banner) -->
+    <section class="section-padding bg-black position-relative overflow-hidden">
+        <div class="neon-glow" style="top: 20%; left: 35%;"></div>
+        <div class="container position-relative z-2">
+            <div class="glass-card p-5 text-center text-lg-start">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-8">
+                        <span class="badge-luxury mb-3"><i class="fas fa-rocket"></i> Take The First Step</span>
+                        <h2 class="display-5 fw-extrabold mb-3">Ready to Accelerate Your Enterprise Transformation?</h2>
+                        <p class="lead text-secondary mb-0">Schedule an executive advisory session with our senior
+                            digital transformation strategists today.</p>
+                    </div>
+                    <div class="col-lg-4 text-center text-lg-end">
+                        <a href="contact.html" class="btn-nexus btn-primary-nexus py-3 px-5 fs-5">
+                            Schedule Advisory Call <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Footer -->
+    <footer class="nexus-footer">
+        <div class="container">
+            <div class="row g-5 mb-5 text-center text-lg-start">
+                <div class="col-lg-4">
+                    <a href="index.html" class="navbar-brand-nexus mb-3 d-inline-flex">
+                        <div class="brand-icon"><i class="fas fa-cube"></i></div>
+                        <span class="ms-2 fw-bold gradient-text">NEXUS</span>
+                    </a>
+                    <p class="text-secondary small mb-4">NEXUS CONSULTING is a global leader in digital transformation,
+                        AI innovation, multi-cloud strategy, and enterprise modernization for Fortune 500 organizations.
+                    </p>
+                    <div class="d-flex justify-content-center justify-content-lg-start gap-2">
+                        <a href="#" class="social-icon-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon-btn"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon-btn"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon-btn"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-6">
+                    <h6 class="footer-heading">Solutions</h6>
+                    <ul class="footer-links">
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-6">
+                    <h6 class="footer-heading">Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About NEXUS</a></li>
+                        <li><a href="insights.html">Insights</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4">
+                    <h6 class="footer-heading">Executive Newsletter</h6>
+                    <p class="small text-secondary mb-3">Subscribe to receive our monthly C-Suite Digital Transformation
+                        Outlook.</p>
+                    <form onsubmit="event.preventDefault(); alert('Thank you for subscribing to NEXUS Insights.');"
+                        class="d-flex flex-column flex-sm-row gap-2">
+                        <input type="email" placeholder="Enter corporate email"
+                            class="form-control footer-newsletter-input" required>
+                        <button type="submit" class="btn-nexus btn-primary-nexus py-2 px-4">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+
+            <div
+                class="pt-4 border-top border-secondary border-opacity-25 d-flex flex-column flex-md-row align-items-center justify-content-between small text-muted text-center text-md-start gap-3">
+                <p class="mb-0">&copy; 2026 NEXUS CONSULTING. All Rights Reserved. Enterprise Digital Transformation.
+                </p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-muted">Privacy Policy</a>
+                    <span>|</span>
+                    <a href="#" class="text-muted">Terms of Service</a>
+                    <span>|</span>
+                    <a href="#" class="text-muted">Security Center</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/slider.js"></script>
+</body>
+
+</html>
