@@ -944,8 +944,10 @@ a {
 }
 
 .social-auth-btn.google { color: #EA4335; }
-.social-auth-btn.apple { color: #000000; }
-.social-auth-btn.facebook { color: #1877F2; }
+.social-auth-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(108, 43, 255, 0.2);
+}
 
 .auth-footer-text {
     text-align: center;
@@ -955,7 +957,7 @@ a {
 
 .auth-footer-link {
     color: var(--primary);
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
     transition: var(--transition-fast);
 }
@@ -965,3 +967,92 @@ a {
     text-decoration: underline;
 }
 
+/* ==========================================================================
+   ADVANCED GLOBAL ANIMATION ENGINE & STYLING ENHANCEMENTS
+   ========================================================================== */
+
+/* Keyframe Animations */
+@keyframes floatSlow {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(0.5deg);
+    }
+}
+
+@keyframes badgeGlow {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(108, 43, 255, 0.25), inset 0 0 10px rgba(108, 43, 255, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(0, 210, 255, 0.4), inset 0 0 15px rgba(0, 210, 255, 0.2);
+    }
+}
+
+@keyframes shimmerSweep {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+/* Floating Elements Animation */
+.floating-element {
+    animation: floatSlow 5s ease-in-out infinite !important;
+}
+
+/* Luxury Badge Ambient Glow Animation */
+.badge-luxury {
+    animation: badgeGlow 4s ease-in-out infinite !important;
+}
+
+/* Interactive Card Image Zoom & Shine on Hover */
+.glass-card,
+.service-card,
+.case-item,
+.faq-card,
+.careers-benefit-card,
+.job-card {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease !important;
+}
+
+.glass-card:hover,
+.service-card:hover,
+.faq-card:hover,
+.careers-benefit-card:hover,
+.job-card:hover {
+    transform: translateY(-8px) scale(1.01) !important;
+    border-color: var(--card-hover-border) !important;
+    box-shadow: 0 20px 45px rgba(108, 43, 255, 0.18) !important;
+}
+
+.glass-card img,
+.service-card img,
+.careers-benefit-card img {
+    transition: transform 0.5s ease-out !important;
+}
+
+.glass-card:hover img,
+.service-card:hover img,
+.careers-benefit-card:hover img {
+    transform: scale(1.04) !important;
+}
+
+/* Button Icon Micro-Animations */
+.btn-nexus i {
+    transition: transform 0.3s ease !important;
+}
+
+.btn-nexus:hover i.fa-arrow-right,
+.btn-nexus:hover i.fa-paper-plane,
+.btn-nexus:hover i.fa-download {
+    transform: translateX(5px) !important;
+}
+
+.btn-nexus:hover i.fa-play-circle,
+.btn-nexus:hover i.fa-cube {
+    transform: scale(1.2) rotate(15deg) !important;
+}
