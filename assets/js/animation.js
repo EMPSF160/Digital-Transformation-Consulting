@@ -20,19 +20,26 @@ document.addEventListener('DOMContentLoaded', () => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const counter = entry.target;
-                    const targetVal = parseFloat(counter.getAttribute('data-count') || counter.innerText);
-                    const prefix = counter.getAttribute('data-prefix') || '';
-                    const suffix = counter.getAttribute('data-suffix') || '';
-                    const decimals = parseInt(counter.getAttribute('data-decimals') || '0', 10);
+                    const rawAttr = counter.getAttribute('data-count');
+                    const rawText = counter.innerText.replace(/[^0-9.-]/g, '');
+                    
+                    let targetVal = parseFloat(rawAttr || rawText);
+                    if (isNaN(targetVal)) {
+                        obs.unobserve(counter);
+                        return;
+                    }
+
+                    const prefix = counter.getAttribute('data-prefix') || (counter.innerText.includes('$') ? '$' : '');
+                    const suffix = counter.getAttribute('data-suffix') || (counter.innerText.includes('%') ? '%' : counter.innerText.includes('x') ? 'x' : counter.innerText.includes('M') ? 'M' : '');
+                    const decimals = parseInt(counter.getAttribute('data-decimals') || (rawAttr && rawAttr.includes('.') ? rawAttr.split('.')[1].length : '0'), 10);
 
                     let startVal = 0;
-                    const duration = 2000; // ms
+                    const duration = 1800; // ms
                     const startTime = performance.now();
 
                     function updateCount(currentTime) {
                         const elapsed = currentTime - startTime;
                         const progress = Math.min(elapsed / duration, 1);
-                        // Easing cubic-out
                         const easeProgress = 1 - Math.pow(1 - progress, 3);
                         const currentCount = startVal + easeProgress * (targetVal - startVal);
 
@@ -49,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     obs.unobserve(counter);
                 }
             });
-        }, { threshold: 0.5 });
+        }, { threshold: 0.2 });
 
         statCounters.forEach(counter => observer.observe(counter));
     }
